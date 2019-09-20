@@ -111,9 +111,13 @@ input[type="text"] {
     margin-bottom: 10px;
     background-color: yellow;
   }
-  
-  input[type="button"] {
-    width: 120px;
-    margin-left: 35px;
-    display: block;
+input[type="button"] {
+    background-color: cyan;
+}
+  .button[type="textarea"] {
+    border: 1px solid blue;
+  }
+
+  .button[data-foo="bazz"] {
+    border: 1px solid green;
   }
