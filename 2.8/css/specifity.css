@@ -1,0 +1,46 @@
+/*
+* {}
+
+li {}
+
+li:first-line {}
+
+ul li {}
+
+ul ol+li {}
+
+h1+*[rel=up] {}
+
+ul ol li.red {}
+
+li.red.level {}
+
+p {}
+
+div p {}
+
+.sith
+
+div p.sith {}
+
+#sith 100 (one id selector) 
+
+body #darkside .sith p {}
+*/
+/*
+p {
+    color: red;
+}
+
+body div {
+    color: brown;
+}
+
+div#pagewrapper {
+    color: blue;
+}
+
+#pagewrapper div.content {
+    color: green;
+}
+*/

@@ -1,3 +1,5 @@
+/*****************  Сброс стилей */
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -365,45 +367,157 @@ textarea {
     padding: 0.2em 0;
 }
 
-/** Шрифты */
-
+/***************** Шрифты */
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    src: url('../fonts2/Roboto-MediumItalic.eot');
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+        url('../fonts2/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-MediumItalic.woff') format('woff'),
+        url('../fonts2/Roboto-MediumItalic.ttf') format('truetype');
     font-weight: 500;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Black.ttf') format('truetype');
-    font-weight: 900;
+    font-style: italic;
 }
 
-/** Общие стили */
-body {
-    /* цвет лучше указывать в hex и вынести как общий стиль для заголовков и абзацей */
-    color: #242424;
-    /* color: rgb(36, 36, 36); */
+@font-face {
     font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Italic.eot');
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url('../fonts2/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Italic.woff') format('woff'),
+        url('../fonts2/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts2/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Bold.woff') format('woff'),
+        url('../fonts2/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts2/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Regular.woff') format('woff'),
+        url('../fonts2/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('../fonts2/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Medium.woff') format('woff'),
+        url('../fonts2/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-BoldItalic.eot');
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+        url('../fonts2/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-BoldItalic.woff') format('woff'),
+        url('../fonts2/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-ThinItalic.eot');
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'),
+        url('../fonts2/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-ThinItalic.woff') format('woff'),
+        url('../fonts2/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Black.eot');
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url('../fonts2/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Black.woff') format('woff'),
+        url('../fonts2/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts2/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Light.woff') format('woff'),
+        url('../fonts2/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-LightItalic.eot');
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('../fonts2/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-LightItalic.woff') format('woff'),
+        url('../fonts2/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-BlackItalic.eot');
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
+        url('../fonts2/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-BlackItalic.woff') format('woff'),
+        url('../fonts2/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts2/Roboto-Thin.eot');
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+        url('../fonts2/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts2/Roboto-Thin.woff') format('woff'),
+        url('../fonts2/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/***************** Общие стили */
+
+/** свойство для родительского элемента, чтобы его можно было унаследовать */
+html {
+    box-sizing: border-box;
+}
+
+/** все вложенные элементы наследуют от родителя,
+    если ни у одного родителя box-sizing не был изменен
+    возьмется из html
+*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto";
+    color: #242424;
 }
 
 h1 {
@@ -412,85 +526,62 @@ h1 {
 
 h2 {
     font-size: 50px;
+    
+    /** соответствует начертанию font-weight:bold*/
     font-weight: 700; 
 }
 
 h3 {
     font-size: 35px;
+
+    /** соответствует начертанию font-weight:bolder*/
+    font-weight: 900;
 }
 
 p {
-    /* размер шрифта 14px по макету, не 12 */
-    /* font-size:12px */
-
-    font-size:14px;
-    font-weight: 200; 
-    line-height: 1,2;
-    /* letter-spacing: 1;  1 можно не указывать*/
-    
-    margin-top: 20px;
-}
-
-/*Старайтесь группировать внутри { } текстовые стили, оформление и положение*/
-.button{ 
-    font-size: 18px;      
-    text-decoration: none;
-    color: #ffffff;
+    font-size: 14px;
+    /** 
+        нет соответствия значению-слову, но подтягивается 
+        шрифт Roboto Light, потому что так указанов в @font-face 
+    */
+    font-weight: 300;
+    line-height: 1.2;
    
-    background: #90d23d;
-    /* background: #a3cc40;*/
-    border-radius: 15px;
-
-    padding-top: 21px;
-    padding-bottom: 17px;
-    padding-left: 33px;
-    padding-right: 31px;
-    /* padding: 20px 30px;  */
 }
 
-/** Layout */
-.container {
-    width: 1030px;
+p + p {
+    margin-bottom: 19px;
 }
 
-/** BLOCKS */
-.block01 {
-    background: url('../img/top_bg.jpg') no-repeat center;
-    background-size: 100%;
+a {
+    text-decoration: none;
 }
 
-.description {
+
+
+/*Общие стили элементов управления, разберите с консультантом*/
+
+input[type="button"],
+button {
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+/*исправить нажатие*/
+input[type="button"]:active,
+button:active {
+    border:none;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 30px;
+    font-size: 18px;
     color: #fff;
+    background-color: rgb(144, 210, 61);
+    border-radius: 15px;
 }
 
-.description__title {
-    font-size: 80px;
-    font-weight:100;
-}
+/** Сетка макета */
 
-.description__sub {
-    font-size: 50px;
-    font-weight: 400;
-}
-
-/* не совсем верный смысл селектора. 
-правильнее не "абзац, который находится в блоке преимущества, отстоит на 16px от заголовка",
-а "элемент 'заголовок' блока преимущества имеет отступ снизу*/
-/* .advantage p {
-    margin-top: 16px;
-} */
-
-.block02__text1 {
-    font-size:40px;
-    font-weight: 900;
-    margin-bottom: 32px;
-}
-
-.block02__text3 {
-    margin-bottom: 22px;
-    font-weight: 900;
-}
-
-
-
-
+/** Компоненты **/

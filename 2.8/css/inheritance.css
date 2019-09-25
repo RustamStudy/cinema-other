@@ -1,0 +1,18 @@
+body {
+    font-size: 20px;
+    color: #913D88;
+	border: 1px solid #333;
+}
+
+p {
+    /* font-size: 14px; */
+    border:unset;
+}
+
+/* .first {
+    color: black;
+}
+
+.second {
+    color: inherit;
+} */
