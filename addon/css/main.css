@@ -557,7 +557,9 @@ a {
     text-decoration: none;
 }
 
-
+.clear {
+    clear:both;
+}
 
 /*Общие стили элементов управления, разберите с консультантом*/
 form {
@@ -646,7 +648,9 @@ button {
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
-input[type="button"]:active,
+
+/** исправить ошибку */
+input[type="button"]:hover,
 button:active {
     border:none;
 }
@@ -661,70 +665,101 @@ button:active {
 }
 
 /** Сетка макета */
-
-.block {
-    /** Сейчас на .block нет свойств, поэтому его можно упустить и в разметке и в css*/
-  
-    /*Это свойство только чтобы увидеть промежуточный результат, раскомментируйте*/
-    border: 1px solid blue;
+.content {
+    width: 1030px;
+    margin: auto;
 }
 
-.block_top {
+.block-top {
     background-image: url('../img/top_bg.jpg');
     background-color: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+
+    padding-top: 53px;
+    padding-bottom: 366px;
+
+    margin-bottom: 83px;
 }
 
-.block_gift {
-    /* Возможно использовать shorthand */
-    background:  url('../img/b4_bg.jpg') ;
+.block-why-we {
+    margin-bottom: 128px;
 }
 
-.block__inner {
-    width: 1031px;
-    margin: auto;
-
-    /** расскоментируйте, чтобы увидеть промежуточный результат*/
-    border: 1px solid red;
+.block-films-list {
+    margin-bottom: 148px;
 }
 
-.block__inner>div {
-    background: yellow;
+.block-gift {
+    padding-top: 149px;
+    padding-bottom: 175px;
+
+    margin-bottom: 88px;
 }
-.block__inner>.why-we{
-    background: grey;
+
+.block-films-mosaic {
+    margin-bottom: 96px;
 }
 
+.block-map {
 
+}
 
+.block-footer {
+    padding-top: 62px;
+    padding-bottom: 36px;
+}
 
 /** Компоненты **/
-.top {
-    height: 354px;
+
+/**/
+.nav-logo {
+    margin-bottom: 164px;
 }
 
-.why-we{
-    height: 542px;
+.logo {
+    display:inline-block;
 }
 
-.film-list{
-    height: 568px;
+.menu {
+    line-height: 45px;
+    margin-left: 226px; 
+    display:inline-block;
 }
 
-.gift{
-    height: 379px;
+.menu__item {
+    display: inline-block;
+    margin-left: 35px;
 }
 
-.film-mosaic {
-    height: 1168px;
+.menu__link {
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.map {
-    height: 448px;
+.menu__link:hover {
+    color: #90d23d;
+    cursor: pointer;
 }
 
-.footer {
-    height: 120px;
+/**/
+.main-headers {
+    color: #fff;
+    text-align: center;
 }
+
+.main-headers__descriptor{
+    margin-bottom: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 0.3px;
+}
+
+.main-headers__subheader {
+    font-size: 50px;
+    letter-spacing: -1.3px;
+}
+
+
+/** Медиа – правила */
