@@ -121,3 +121,52 @@ input[type="button"] {
   .button[data-foo="bazz"] {
     border: 1px solid green;
   }
+
+
+
+
+
+
+
+
+
+
+
+p {
+    color: red;
+}
+p[name="par"]{
+    color: green;
+}
+p[name*="next"]{
+    color: brown;
+}
+p[name^="new"]{
+    font-weight: 800;
+}
+p[name$="para"]{
+    font-style: italic;
+}
+p[name~="par"]{
+    color: yellow;
+}
+.cont1{
+    font-size: 30px;
+}
+.cont2{
+    font-size: 50px;
+}
+.cont3{
+    font-size: 70px;
+}
+
+.par4+.par5{
+    color: purple;
+}
+
+.par1~.par7{
+    color: blue
+}
+.cont1 .par6{
+    color:orange;
+}

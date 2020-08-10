@@ -7,6 +7,7 @@
     <title>2.8 PET project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pseudo.css">
+    <link rel="stylesheet" href="css/specifity.css">
     <link rel="stylesheet" href="css/icons.css">
 </head>
 
@@ -50,6 +51,22 @@
     <!-- CSS специфичность понимает “форму” селектора. Это означает, что когда у вас есть *[id="yellow"] и #yellow, первый рассматривается как селектор атрибутов. -->
 
     <!-- Сброс стилей rest.css-->
+
+        <div class = "div">
+            <h1>Заголовок</h1>
+            <p rel="up">Параграф1</p>
+            <ul>
+                <li>Заголовок1</li>
+                <li>Заголовок2</li>
+                <li class = "red">Заголовок3</li>
+                <li>Заголовок4</li>
+                <li>Заголовок5</li>
+            </ul>
+            <p class="sith" rel="up">Параграф2</p>
+        </div>
+            <p class="sith">Параграф3</p>
+       
+
 </body>
 
 </html>

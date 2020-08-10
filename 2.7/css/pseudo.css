@@ -71,3 +71,51 @@ a:visited:active {
     text-transform: uppercase;
 }
 
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+.test span:nth-child(even){
+    color:red;
+}
+.test span:nth-child(3){
+  font-size: 50px;
+}
+.test span:first-child{
+  font-size: 30px;
+}
+.test span:last-child{
+  font-size: 20px;
+}
+.test span:hover{
+  color:blue;
+  /* font-size: 50px; *//*закоменчен, потому что текст прыгает*/
+}
+.test span:nth-child(2):hover{
+  color: aqua;
+}
+.test::before{
+  content: 'Псевдокласс "ДО"';
+}
+.test::after{
+  content: 'Псевдокласс "После"';
+}
+.test::before,
+.test::after{
+  font-size: 25px;
+  color: green;
+}
+.test span:not(.test__span){
+  font-weight: 700;
+}
+
+.test__input{
+  border:1px solid brown;
+  outline:none;
+}
+.test__input:focus{
+  border:4px solid red;
+
+}

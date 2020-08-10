@@ -44,3 +44,54 @@ div#pagewrapper {
     color: green;
 }
 */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.div{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    color: violet;
+}
+
+li:first-line {
+    font-size: 20px;
+}
+
+ul li {
+    color: green;
+    font-size: 40px;
+}
+
+
+h1+*[rel="up"] {
+    color: blue;
+}
+
+ul li.red {
+    color: red;
+}
+
+li.red.level {
+    font-style: 50px;
+}
+
+p {
+    font-size: 40px;
+}
+
+div p {
+    font-size: 60px;
+}
+
+.sith{
+    font-weight: 700;
+}
+
+div p.sith {
+    font-style: italic;
+}
