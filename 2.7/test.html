@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --text-color:green;
+    }
+    p{
+        color:var(--text-color);
+    }
+    p::before{
+        content:'текст до';
+        color: blue;
+    }
+    p::before:hover{
+        content:'текст до с hover';
+    }
+    p:hover::before{
+        content:'';
+    }
+</style>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam nesciunt officia repellendus veritatis culpa, facilis recusandae obcaecati fugiat sed sequi perspiciatis quisquam qui ex nobis quasi voluptates suscipit nostrum!
+    </p>
+</body>
+</html>
